@@ -1,0 +1,16 @@
+{
+  "name": "secure-text-share",
+  "version": "1.0.0",
+  "description": "一次性加密文本分享服务",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security"
+  },
+  "author": "You",
+  "license": "MIT"
+}
