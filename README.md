@@ -30,8 +30,8 @@
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/Andyanm/secure-text-share.git
-cd secure-text-share
+git clone https://github.com/Andyanm/Secure-Text-Share.git
+cd Secure-Text-Share
 ```
 
 2. **安装依赖**
