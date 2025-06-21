@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接收文本 - 加密文本分享</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📥 接收文本</h1>
+            <a href="/" class="back-link">← 返回首页</a>
+        </header>
+
+        <main>
+            <form id="receiveForm" class="form-container">
+                <div class="form-group">
+                    <label for="codeInput">输入6位取文本码:</label>
+                    <input 
+                        type="text" 
+                        id="codeInput" 
+                        name="code" 
+                        placeholder="输入6位取文本码"
+                        maxlength="6"
+                        pattern="[A-Za-z0-9]{6}"
+                        required
+                        autocomplete="off"
+                    >
+                    <small>取文本码由6位字母和数字组成</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="receiveBtn">
+                    🔓 获取加密文本
+                </button>
+            </form>
+
+            <div id="result" class="result-container" style="display: none;">
+                <div class="success-message">
+                    <h3>✅ 文本获取成功!</h3>
+                    <div class="text-display">
+                        <label>解密后的文本内容:</label>
+                        <div class="text-box">
+                            <pre id="decryptedText"></pre>
+                            <button id="copyTextBtn" class="copy-btn" title="复制文本内容">📋</button>
+                        </div>
+                    </div>
+                    <div class="warning">
+                        <p>⚠️ <strong>重要提醒:</strong></p>
+                        <ul>
+                            <li>此文本已被获取，取文本码已失效</li>
+                            <li>请及时保存或处理文本内容</li>
+                            <li>刷新页面后文本将消失</li>
+                        </ul>
+                    </div>
+                    <button id="receiveAnotherBtn" class="btn btn-secondary">接收另一个文本</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

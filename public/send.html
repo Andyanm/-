@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发送文本 - 加密文本分享</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📤 发送文本</h1>
+            <a href="/" class="back-link">← 返回首页</a>
+        </header>
+
+        <main>
+            <form id="sendForm" class="form-container">
+                <div class="form-group">
+                    <label for="textInput">输入要分享的文本:</label>
+                    <textarea 
+                        id="textInput" 
+                        name="text" 
+                        placeholder="在此输入您要分享的文本内容..."
+                        maxlength="10000"
+                        required
+                    ></textarea>
+                    <div class="char-counter">
+                        <span id="charCount">0</span>/10000 字符
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="sendBtn">
+                    🔒 加密并生成取文本码
+                </button>
+            </form>
+
+            <div id="result" class="result-container" style="display: none;">
+                <div class="success-message">
+                    <h3>✅ 文本已成功加密保存!</h3>
+                    <div class="code-display">
+                        <label>取文本码:</label>
+                        <div class="code-box">
+                            <span id="generatedCode"></span>
+                            <button id="copyCodeBtn" class="copy-btn" title="复制取文本码">📋</button>
+                        </div>
+                    </div>
+                    <div class="warning">
+                        <p>⚠️ <strong>重要提醒:</strong></p>
+                        <ul>
+                            <li>请妥善保管此取文本码</li>
+                            <li>文本只能获取一次，获取后将自动删除</li>
+                            <li>24小时后自动过期</li>
+                        </ul>
+                    </div>
+                    <button id="sendAnotherBtn" class="btn btn-secondary">发送另一个文本</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

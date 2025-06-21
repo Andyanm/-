@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加密文本分享</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 加密文本分享</h1>
+            <p>安全、一次性、加密的文本分享服务</p>
+        </header>
+
+        <main>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h2>📤 发送文本</h2>
+                    <p>加密保存您的文本，生成6位取文本码</p>
+                    <a href="/send" class="btn btn-primary">发送文本</a>
+                </div>
+
+                <div class="feature-card">
+                    <h2>📥 接收文本</h2>
+                    <p>输入6位取文本码，获取加密文本</p>
+                    <a href="/receive" class="btn btn-secondary">接收文本</a>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>🛡️ 安全特性</h3>
+                <ul>
+                    <li><strong>端到端加密</strong> - 文本使用AES-256加密存储</li>
+                    <li><strong>一次性访问</strong> - 文本获取后立即删除</li>
+                    <li><strong>自动过期</strong> - 24小时后自动清理</li>
+                    <li><strong>随机密钥</strong> - 每次生成唯一的加密密钥</li>
+                </ul>
+            </div>
+
+            <div class="stats" id="stats">
+                <p>当前活跃文本数量: <span id="activeCount">加载中...</span></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 加密文本分享服务 | 安全可靠</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
