@@ -1,4 +1,8 @@
 # 🔒 加密文本分享服务
+# 项目名称
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://oaipro.edu.deal)
+
 
 一个安全、一次性的加密文本分享服务，支持生成6位取文本码，确保文本在获取后立即删除，保护隐私数据安全传输。
 
