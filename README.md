@@ -214,7 +214,7 @@ module.exports = {
 ## 📁 项目结构
 
 ```
-secure-text-share/
+Secure-Text-Share/
 ├── package.json              # 项目配置
 ├── server.js                 # 主服务器文件
 ├── ecosystem.config.js       # PM2配置
@@ -265,7 +265,7 @@ A: 使用PM2管理进程，自动重启服务。
 
 ```bash
 # PM2日志
-pm2 logs secure-text-share
+pm2 logs Secure-Text-Share
 
 # 系统日志
 tail -f logs/combined.log
