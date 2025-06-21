@@ -30,7 +30,7 @@
 
 1. **克隆项目**
 ```bash
-git clone https://github.com/your-username/secure-text-share.git
+git clone https://github.com/Andyanm/secure-text-share.git
 cd secure-text-share
 ```
 
@@ -70,7 +70,7 @@ server {
     server_name yourdomain.com;
     
     location / {
-        proxy_pass http://127.0.0.1:3355;
+        proxy_pass http://127.0.0.1:2355;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -186,7 +186,7 @@ GET /api/stats
 
 ```bash
 NODE_ENV=production          # 运行环境
-PORT=3355                   # 服务端口
+PORT=2355                   # 服务端口
 MAX_TEXT_LENGTH=10000       # 最大文本长度
 CLEANUP_INTERVAL=3600000    # 清理间隔（毫秒）
 ```
@@ -205,7 +205,7 @@ module.exports = {
     max_memory_restart: '1G',
     env: {
       NODE_ENV: 'production',
-      PORT: 3355
+      PORT: 2355
     }
   }]
 };
